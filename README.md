@@ -42,3 +42,5 @@ __HINT__:
 
 __If Done Correctly__:
 >If you do it all correctly you document should look a little something like this.
+
+![Screenshot 2021-06-26 203726](https://user-images.githubusercontent.com/67172682/123529467-6d406880-d6be-11eb-9b6e-831be83f9d4e.png)
