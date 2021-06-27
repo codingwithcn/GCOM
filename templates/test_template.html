@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a test doc</title>
+</head>
+<body>
+    <style id='get_GCOM_STYLE'></style>
+    <h1>This is a test doc</h1>
+    <div id='comment_section' class='comment_section'></div>
+</body>
+  <script id='get_GCOM_SCRIPT'></script>
+  <script>
+      fetch('/get_GCOM',
+      { method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({API_KEY: 'asdasdasdasdad211312312sadasd21224656789765432asdasdasda12vsdvshry534a'})
+      })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        document.getElementById("get_GCOM_STYLE").innerHTML = data['style'];
+        document.getElementById('get_GCOM_SCRIPT').innerHTML = "var API_KEY = 'asdasdasdasdad211312312sadasd21224656789765432asdasdasda12vsdvshry534a';"+data['data']
+      });
+  </script>
+</html>
